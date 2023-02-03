@@ -1,0 +1,80 @@
+
+html,*{
+  cursor: none;
+}
+
+div.heart{
+  position: fixed;
+  z-index: 100000000000000000;
+  pointer-events: none;
+  transform: translateX(-50%) translateY(15%);
+}
+
+div.heart-icon{
+  width: 15px;
+  height: 15px;
+  background-color: pink;
+  rotate:45deg;
+}
+
+
+div.heart-icon:before {
+    content: '';
+    width:100%;
+    height:100%;
+    position:absolute;
+    left:calc(-100%/2);
+    border-radius:150px;
+    background:pink;
+    pointer-events: none;
+}
+div.heart-icon:after {
+    content: '';
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:calc(-100%/2);
+    border-radius:150px;
+    background:pink;
+    pointer-events: none;
+}
+
+div.partical-clone:before {
+    content: '';
+    width:100%;
+    height:100%;
+    position:absolute;
+    left:calc(-100%/2);
+    border-radius:150px;
+    background:pink;
+    pointer-events: none;
+}
+div.partical-clone:after {
+    content: '';
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:calc(-100%/2);
+    border-radius:150px;
+    background:pink;
+    pointer-events: none;
+}
+
+div.partical-clone{
+    background: pink;
+    width: 10px;
+    height: 10px;
+    top: 0;
+    left:0;
+    position: absolute;
+}
+.partical {
+    transform-origin: center;
+    margin-bottom: -10px;
+    height: 10px;
+}
+.partical-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
