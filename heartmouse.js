@@ -14,7 +14,9 @@ function Heartmouse(c = "heart",i = "12",dpi = "30",d = "700",r = "40") {
 		$(document).mousemove(function (e) {
 				var mousex = e.clientX;
 				var mousey = e.clientY;
+				setTimeout(() => {
 				$('.'+_default.class).css({"top":mousey,"left":mousex});
+				}, 20);
 		})
 		$(document).click(function (e) { 
 			$('div.partical-box').remove();
