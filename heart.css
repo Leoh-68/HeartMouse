@@ -1,6 +1,6 @@
 
-html,*{
-  cursor: none;
+*{
+  cursor: url(../images/cursor.cur),auto !important;
 }
 
 div.heart{
@@ -78,3 +78,4 @@ div.partical-clone{
     top: 50%;
     left: 50%;
 }
+
